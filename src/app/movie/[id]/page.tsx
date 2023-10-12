@@ -3,7 +3,7 @@ import { MovieInfo } from "@/app/types";
 import Link from "next/link";
 
 async function getMovieInfo(id: string) {
-  const url = `https://www.omdbapi.com/?i=${id}&apikey=31838464`;
+  const url = `https://www.omdbapi.com/?i=${id}&apikey=${process.env.NEXT_PUBLIC_APIKEY}`;
   const options = { method: "GET" };
 
   try {
@@ -24,7 +24,7 @@ async function InfoMovie({ params }: { params: { id: string } }) {
         <Link
           href={"/"}
           replace={true}
-          className="p-2 hover:bg-slate-900 rounded w-20 absolute top-28"
+          className="p-2 hover:bg-slate-900 rounded w-20 absolute top-20"
         >
           ⬅️ Back
         </Link>

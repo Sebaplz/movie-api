@@ -10,7 +10,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
 
   async function searchMovie(searchName: string) {
-    const url = `https://www.omdbapi.com/?s=${searchName}&apikey=31838464`;
+    const url = `https://www.omdbapi.com/?s=${searchName}&apikey=${process.env.NEXT_PUBLIC_APIKEY}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
