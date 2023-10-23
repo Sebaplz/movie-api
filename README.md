@@ -1,5 +1,9 @@
 ### Ver Deploy: https://movie-api-mu-five.vercel.app/
 
+![Captura de pantalla 2023-10-12 142256](https://github.com/Sebaplz/movie-api/assets/51845541/ce505096-0505-4779-b673-f52d085a8eaa)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
